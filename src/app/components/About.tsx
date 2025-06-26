@@ -7,7 +7,7 @@ export default function About() {
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     {/* Left Side - Profile Image */}
-                    <div className="hidden lg:flex justify-center lg:justify-start">
+                    <div className="hidden lg:flex justify-center items-center">
                         <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                             <div className="w-full h-full rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl aspect-square">
                                 <Image
@@ -17,10 +17,19 @@ export default function About() {
                                     height={384}
                                     className="w-full h-full object-cover rounded-full hover:scale-105 transition-transform duration-500"
                                     priority
+                                    style={{
+                                        animation: "float 6s ease-in-out infinite"
+                                    }}
                                 />
                             </div>
                             {/* Decorative ring */}
-                            <div className="absolute inset-0 rounded-full border-2 border-primary/20 animate-pulse" aria-hidden="true"></div>
+                            <div 
+                                className="absolute inset-0 rounded-full border-2 border-primary/20 animate-pulse" 
+                                aria-hidden="true"
+                                style={{
+                                    animation: "float 6s ease-in-out infinite"
+                                }}
+                            ></div>
                         </div>
                     </div>
 

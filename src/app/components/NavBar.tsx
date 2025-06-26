@@ -35,7 +35,7 @@ export default function NavBar() {
                             <a
                                 href={item.href}
                                 onClick={(e) => handleNavClick(e, item.href)}
-                                className="text-white hover:text-light-blue transition-all duration-300 hover:scale-110 hover:drop-shadow-lg relative group"
+                                className="text-white hover:text-light-blue transition-all duration-300 hover:scale-110 hover:drop-shadow-lg relative group text-lg font-medium"
                             >
                                 {item.name}
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-light-blue to-secondary transition-all duration-300 group-hover:w-full"></span>
@@ -47,10 +47,13 @@ export default function NavBar() {
                 {/* Desktop Download Button */}
                 <a
                     href="#"
-                    className="hidden md:block ml-8 px-4 py-2 rounded-full text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg relative overflow-hidden group gradient-primary"
+                    className="hidden md:flex items-center gap-2 ml-8 px-6 py-3 rounded-full text-white text-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg relative overflow-hidden group gradient-primary"
                 >
                     <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 gradient-primary-reverse"></span>
-                    <span className="relative z-10">Download Resume</span>
+                    <svg className="w-5 h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span className="relative z-10">Resume</span>
                 </a>
 
                 {/* Mobile Hamburger Button */}
