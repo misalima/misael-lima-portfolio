@@ -6,10 +6,24 @@ export default function NavBar() {
     
     const navItems = [
         { name: 'Home', href: '/' },
-        { name: 'About', href: '/about' },
+        { name: 'About', href: '#about' },
         { name: 'Projects', href: '/projects' },
         { name: 'Contact', href: '/contact' }
     ];
+
+    const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const targetId = href.substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    };
 
     return (
         <>
@@ -20,6 +34,7 @@ export default function NavBar() {
                         <li key={item.name}>
                             <a
                                 href={item.href}
+                                onClick={(e) => handleNavClick(e, item.href)}
                                 className="text-white hover:text-light-blue transition-all duration-300 hover:scale-110 hover:drop-shadow-lg relative group"
                             >
                                 {item.name}
@@ -74,7 +89,10 @@ export default function NavBar() {
                             <a
                                 href={item.href}
                                 className="block text-white hover:text-light-blue transition-all duration-300 py-3 text-lg text-center"
-                                onClick={() => setIsOpen(false)}
+                                onClick={(e) => {
+                                    handleNavClick(e, item.href);
+                                    setIsOpen(false);
+                                }}
                             >
                                 {item.name}
                             </a>
