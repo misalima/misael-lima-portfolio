@@ -20,7 +20,7 @@ export default function About() {
                                 />
                             </div>
                             {/* Decorative ring */}
-                            <div className="absolute inset-0 rounded-full border-2 border-primary/20 animate-pulse"></div>
+                            <div className="absolute inset-0 rounded-full border-2 border-primary/20 animate-pulse" aria-hidden="true"></div>
                         </div>
                     </div>
 
@@ -71,10 +71,14 @@ export default function About() {
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-6">
-                            <button className="gradient-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer relative overflow-hidden group">
+                            <a 
+                                href="/resume.pdf" 
+                                download="Misael_Lima_Resume.pdf"
+                                className="gradient-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer relative overflow-hidden group inline-block text-center"
+                            >
                                 <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 gradient-primary-reverse"></span>
                                 <span className="relative z-10">Download Resume</span>
-                            </button>
+                            </a>
                             <button className="border-2 border-primary text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary hover:text-white hover:scale-105 transition-all duration-300 cursor-pointer">
                                 Get In Touch
                             </button>
