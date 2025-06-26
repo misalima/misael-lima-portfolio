@@ -1,13 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
+import Hero from "../components/Hero";
 
 export default function HomePage() {
     return (
         <>
-        <Header />
-        <div>
-            <h1>Welcome to My Portfolio</h1>
-        </div>
+            <Header />
+            <Hero />
         </>
     );
 }
