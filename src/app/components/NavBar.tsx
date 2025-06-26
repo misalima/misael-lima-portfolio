@@ -80,6 +80,14 @@ export default function NavBar() {
                 </button>
             </nav>
 
+            {/* Backdrop Blur Overlay */}
+            <div
+                className={`md:hidden fixed top-20 left-0 right-0 bottom-0 backdrop-blur-sm bg-black/30 transition-all duration-300 z-30 ${
+                    isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+                }`}
+                onClick={() => setIsOpen(false)}
+            ></div>
+
             {/* Mobile Dropdown Menu */}
             <div
                 className={`md:hidden absolute top-full left-0 w-full bg-primary-dark shadow-lg transition-all duration-300 z-40 ${
