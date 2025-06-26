@@ -47,8 +47,7 @@ export default function Hero() {
                                 fill
                                 className="object-contain opacity-60"
                                 style={{
-                                    animation: "gentleRotate 12s ease-in-out infinite",
-                                    transform: "rotate(25deg)"
+                                    animation: "gentleRotate25 12s ease-in-out infinite"
                                 }}
                             />
                         </div>
@@ -61,8 +60,7 @@ export default function Hero() {
                                 fill
                                 className="object-contain opacity-70"
                                 style={{
-                                    animation: "gentleRotateReverse 15s ease-in-out infinite",
-                                    transform: "rotate(-18deg)"
+                                    animation: "gentleRotateNeg18 15s ease-in-out infinite"
                                 }}
                             />
                         </div>
@@ -75,8 +73,7 @@ export default function Hero() {
                                 fill
                                 className="object-contain opacity-45"
                                 style={{
-                                    animation: "gentleRotate 18s ease-in-out infinite",
-                                    transform: "rotate(65deg)"
+                                    animation: "gentleRotate65 18s ease-in-out infinite"
                                 }}
                             />
                         </div>
@@ -88,8 +85,7 @@ export default function Hero() {
                                 fill
                                 className="object-contain opacity-35"
                                 style={{
-                                    animation: "gentleRotateReverse 10s ease-in-out infinite",
-                                    transform: "rotate(-40deg)"
+                                    animation: "gentleRotateNeg40 10s ease-in-out infinite"
                                 }}
                             />
                         </div>
@@ -101,8 +97,7 @@ export default function Hero() {
                                 fill
                                 className="object-contain opacity-40"
                                 style={{
-                                    animation: "gentleRotate 14s ease-in-out infinite",
-                                    transform: "rotate(80deg)"
+                                    animation: "gentleRotate80 14s ease-in-out infinite"
                                 }}
                             />
                         </div>
@@ -115,8 +110,7 @@ export default function Hero() {
                                 fill
                                 className="object-contain opacity-30"
                                 style={{
-                                    animation: "gentleRotateReverse 20s ease-in-out infinite",
-                                    transform: "rotate(15deg)"
+                                    animation: "gentleRotate15 20s ease-in-out infinite"
                                 }}
                             />
                         </div>
@@ -128,8 +122,7 @@ export default function Hero() {
                                 fill
                                 className="object-contain opacity-25"
                                 style={{
-                                    animation: "gentleRotate 16s ease-in-out infinite",
-                                    transform: "rotate(-55deg)"
+                                    animation: "gentleRotateNeg55 16s ease-in-out infinite"
                                 }}
                             />
                         </div>
@@ -141,8 +134,7 @@ export default function Hero() {
                                 fill
                                 className="object-contain opacity-35"
                                 style={{
-                                    animation: "gentleRotateReverse 22s ease-in-out infinite",
-                                    transform: "rotate(35deg)"
+                                    animation: "gentleRotate35 22s ease-in-out infinite"
                                 }}
                             />
                         </div>

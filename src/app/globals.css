@@ -110,3 +110,148 @@ body {
     transform: rotate(0deg) scale(1);
   }
 }
+
+/* Specific animations with base rotations */
+@keyframes gentleRotate25 {
+  0% {
+    transform: rotate(25deg) scale(1);
+  }
+  25% {
+    transform: rotate(30deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(25deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(20deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(25deg) scale(1);
+  }
+}
+
+@keyframes gentleRotateNeg18 {
+  0% {
+    transform: rotate(-18deg) scale(1);
+  }
+  25% {
+    transform: rotate(-23deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(-18deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(-13deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(-18deg) scale(1);
+  }
+}
+
+@keyframes gentleRotate65 {
+  0% {
+    transform: rotate(65deg) scale(1);
+  }
+  25% {
+    transform: rotate(70deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(65deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(60deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(65deg) scale(1);
+  }
+}
+
+@keyframes gentleRotateNeg40 {
+  0% {
+    transform: rotate(-40deg) scale(1);
+  }
+  25% {
+    transform: rotate(-45deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(-40deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(-35deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(-40deg) scale(1);
+  }
+}
+
+@keyframes gentleRotate80 {
+  0% {
+    transform: rotate(80deg) scale(1);
+  }
+  25% {
+    transform: rotate(85deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(80deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(75deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(80deg) scale(1);
+  }
+}
+
+@keyframes gentleRotate15 {
+  0% {
+    transform: rotate(15deg) scale(1);
+  }
+  25% {
+    transform: rotate(10deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(15deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(20deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(15deg) scale(1);
+  }
+}
+
+@keyframes gentleRotateNeg55 {
+  0% {
+    transform: rotate(-55deg) scale(1);
+  }
+  25% {
+    transform: rotate(-60deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(-55deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(-50deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(-55deg) scale(1);
+  }
+}
+
+@keyframes gentleRotate35 {
+  0% {
+    transform: rotate(35deg) scale(1);
+  }
+  25% {
+    transform: rotate(30deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(35deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(40deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(35deg) scale(1);
+  }
+}
