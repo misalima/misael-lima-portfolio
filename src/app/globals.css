@@ -31,3 +31,12 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* Gradient Button Styles */
+.gradient-primary {
+  background: linear-gradient(135deg, #9358f7 0%, #6197ee 50%, #10d7e2 100%);
+}
+
+.gradient-primary-reverse {
+  background: linear-gradient(315deg, #9358f7 0%, #6197ee 50%, #10d7e2 100%);
+}

@@ -32,17 +32,9 @@ export default function NavBar() {
                 {/* Desktop Download Button */}
                 <a
                     href="#"
-                    className="hidden md:block ml-8 px-4 py-2 rounded-full text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg relative overflow-hidden group"
-                    style={{
-                        background: 'linear-gradient(135deg, #9358f7 0%, #6197ee 50%, #10d7e2 100%)',
-                    }}
+                    className="hidden md:block ml-8 px-4 py-2 rounded-full text-white text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg relative overflow-hidden group gradient-primary"
                 >
-                    <span 
-                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
-                        style={{
-                            background: 'linear-gradient(315deg, #9358f7 0%, #6197ee 50%, #10d7e2 100%)',
-                        }}
-                    ></span>
+                    <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 gradient-primary-reverse"></span>
                     <span className="relative z-10">Download Resume</span>
                 </a>
 
@@ -93,18 +85,10 @@ export default function NavBar() {
                     ))}
                     <a
                         href="#"
-                        className="block w-full mt-6 px-4 py-4 rounded-full text-white text-center font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg relative overflow-hidden group"
-                        style={{
-                            background: 'linear-gradient(135deg, #9358f7 0%, #6197ee 50%, #10d7e2 100%)',
-                        }}
+                        className="block w-full mt-6 px-4 py-4 rounded-full text-white text-center font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg relative overflow-hidden group gradient-primary"
                         onClick={() => setIsOpen(false)}
                     >
-                        <span 
-                            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000"
-                            style={{
-                                background: 'linear-gradient(315deg, #9358f7 0%, #6197ee 50%, #10d7e2 100%)',
-                            }}
-                        ></span>
+                        <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 gradient-primary-reverse"></span>
                         <span className="relative z-10">Download Resume</span>
                     </a>
                 </div>
