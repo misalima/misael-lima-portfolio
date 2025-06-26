@@ -40,3 +40,73 @@ body {
 .gradient-primary-reverse {
   background: linear-gradient(315deg, #9358f7 0%, #6197ee 50%, #10d7e2 100%);
 }
+
+/* Hexagon Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(-1deg);
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(103, 103, 226, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 20px rgba(103, 103, 226, 0.6)) drop-shadow(0 0 30px rgba(0, 255, 127, 0.3));
+  }
+}
+
+@keyframes subtlePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes gentleRotate {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(5deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(-5deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes gentleRotateReverse {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-5deg) scale(1.01);
+  }
+  50% {
+    transform: rotate(0deg) scale(1.02);
+  }
+  75% {
+    transform: rotate(5deg) scale(1.01);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
