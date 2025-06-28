@@ -13,7 +13,22 @@
   --success: #4CAF50; 
 }
 
-@theme inline {
+/* Dark mode variables */
+.dark {
+  --background: #090914;
+  --foreground: #e2e8f0;
+  --primary-purple: #4c1d95;
+  --primary-green: #00FF7F;
+  --secondary-lilac: #8b5cf6;
+  --lighter-blue: #bbe6ff;
+  --hover: #bbe6ff;
+  --error: #f87171;
+  --warning: #fbbf24;
+  --success: #34d399;
+}
+
+/* Tailwind theme configuration using @theme directive */
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary-green);
@@ -24,12 +39,29 @@
   --color-error: var(--error);
   --color-success: var(--success);
   --color-warning: var(--warning);
-  --font-primary: var(--font-rubik);
+}
+
+/* Custom utility classes for better theme control */
+.text-primary-theme {
+  color: var(--primary-green);
+}
+
+.text-primary-dark-theme {
+  color: var(--primary-purple);
+}
+
+.dark .text-primary-theme {
+  color: var(--primary-green);
+}
+
+.dark .text-primary-dark-theme {
+  color: var(--primary-purple);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Gradient Button Styles */
@@ -39,6 +71,21 @@ body {
 
 .gradient-primary-reverse {
   background: linear-gradient(315deg, #9358f7 0%, #6197ee 50%, #10d7e2 100%);
+}
+
+/* Custom gradient for name text */
+.name-gradient {
+  background: linear-gradient(to right, #290d62, #290d62, #290d62);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.dark .name-gradient {
+  background: linear-gradient(to right, #00FF7F, #00FF7F, #00FF7F);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Hexagon Animations */
