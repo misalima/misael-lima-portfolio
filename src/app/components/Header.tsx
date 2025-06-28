@@ -10,7 +10,7 @@ export default function Header() {
             <div className="flex items-center justify-between h-16">
                 <div className="flex items-center justify-center">
                     <a href="/">
-                       <Image src="/misael_logo.png" width={46} height={46} alt='logo'/>
+                       <Image src="/misael_logo.png" width={52} height={52} alt='logo'/>
                     </a>
                 </div>
                 <div className="flex items-center">

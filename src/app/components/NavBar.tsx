@@ -35,7 +35,7 @@ export default function NavBar() {
                             <a
                                 href={item.href}
                                 onClick={(e) => handleNavClick(e, item.href)}
-                                className="text-white hover:text-light-blue transition-all duration-300 hover:scale-110 hover:drop-shadow-lg relative group text-lg font-medium"
+                                className="text-white hover:text-light-blue transition-all duration-300 hover:scale-110 hover:drop-shadow-lg relative group text-md font-medium"
                             >
                                 {item.name}
                                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-light-blue to-secondary transition-all duration-300 group-hover:w-full"></span>
